@@ -4,11 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest xo-checker.spec.ts",
+    "jest-setup": "jest --init",
+    "jest-clear-cache": "jest --clearCache"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.5.1"
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
   }
 }
